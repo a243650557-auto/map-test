@@ -1,0 +1,10 @@
+rootProject.name = 'mapxusApp'
+include ':@react-native-community_cameraroll'
+project(':@react-native-community_cameraroll').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/cameraroll/android')
+include ':@react-native-community_cameraroll'
+project(':@react-native-community_cameraroll').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/cameraroll/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+
+include ':mapxus_react-native-mapxus-sdk'
+project(':mapxus_react-native-mapxus-sdk').projectDir = new File(rootProject.projectDir, '../node_modules/@mapxus/react-native-mapxus-sdk/android')

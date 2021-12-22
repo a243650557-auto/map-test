@@ -1,0 +1,42 @@
+{
+  "name": "mapxusApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@ant-design/react-native": "^4.2.0",
+    "@mapxus/react-native-mapxus-sdk": "^0.2.1",
+    "@react-native-community/cameraroll": "^4.1.2",
+    "@react-native-community/segmented-control": "^2.2.2",
+    "@react-native-community/slider": "^4.1.12",
+    "@react-native-picker/picker": "^2.2.1",
+    "@turf/helpers": "^6.5.0",
+    "@turf/turf": "^6.5.0",
+    "fbjs": "^0.8.18",
+    "geojson": "^0.5.0",
+    "lodash": "^4.17.21",
+    "react": "17.0.2",
+    "react-native": "0.66.3",
+    "react-native-gesture-handler": "^2.1.0",
+    "react-native-pager-view": "^5.4.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "7.14.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "react-test-renderer": "17.0.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
