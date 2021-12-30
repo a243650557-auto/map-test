@@ -38,9 +38,9 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = mapxusApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = mapxusApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = mapxusApp/main.m; sourceTree = "<group>"; };
-		1B85292B71A44205A643C9C5 /* antoutline.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = antoutline.ttf; path = "../node_modules/@ant-design/icons-react-native/fonts/antoutline.ttf"; sourceTree = "<group>"; };
+		1B85292B71A44205A643C9C5 /* antoutline.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = antoutline.ttf; path = "../node_modules/@ant-design/icons-react-native/fonts/antoutline.ttf"; sourceTree = "<group>"; };
 		1F9314AE713DBC37B0FE8A6D /* Pods-mapxusApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapxusApp.debug.xcconfig"; path = "Target Support Files/Pods-mapxusApp/Pods-mapxusApp.debug.xcconfig"; sourceTree = "<group>"; };
-		3A647D5196314F838FD3EA52 /* antfill.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = antfill.ttf; path = "../node_modules/@ant-design/icons-react-native/fonts/antfill.ttf"; sourceTree = "<group>"; };
+		3A647D5196314F838FD3EA52 /* antfill.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = antfill.ttf; path = "../node_modules/@ant-design/icons-react-native/fonts/antfill.ttf"; sourceTree = "<group>"; };
 		6C2C1450C98CF77CA1C9E464 /* Pods-mapxusApp-mapxusAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapxusApp-mapxusAppTests.debug.xcconfig"; path = "Target Support Files/Pods-mapxusApp-mapxusAppTests/Pods-mapxusApp-mapxusAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = mapxusApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E7F12D5DE3E28FAA0D8C21B /* libPods-mapxusApp-mapxusAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mapxusApp-mapxusAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,7 +94,6 @@
 				1B85292B71A44205A643C9C5 /* antoutline.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		13B07FAE1A68108700A75B9A /* mapxusApp */ = {
@@ -160,7 +159,6 @@
 				6C2C1450C98CF77CA1C9E464 /* Pods-mapxusApp-mapxusAppTests.debug.xcconfig */,
 				C709B918C7E6ADF94A70EBFC /* Pods-mapxusApp-mapxusAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -501,7 +499,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26CLA87FM6;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = mapxusApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -513,8 +514,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = hk.com.prudential.ebriefcase.dev;
 				PRODUCT_NAME = mapxusApp;
+				PROVISIONING_PROFILE_SPECIFIER = "2020 eBriefcase DEV DIST";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -527,7 +529,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26CLA87FM6;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = mapxusApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -538,8 +544,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = hk.com.prudential.ebriefcase.dev;
 				PRODUCT_NAME = mapxusApp;
+				PROVISIONING_PROFILE_SPECIFIER = "2020 eBriefcase DEV DIST";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

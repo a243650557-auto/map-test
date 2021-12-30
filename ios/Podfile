@@ -13,10 +13,17 @@ target 'mapxusApp' do
   )
 
   pod 'react-native-cameraroll', :path => '../node_modules/@react-native-community/cameraroll'
+ 
+
 
   target 'mapxusAppTests' do
     inherit! :complete
     # Pods for testing
+    # use_frameworks!
+    pod 'ViroReact', :path => '../node_modules/react-viro/ios/'
+    # pod 'ViroKit', :path => '../node_modules/react-viro/ios/dist/ViroRenderer/'
+    pod 'ViroKit_static_lib', :path => '../node_modules/react-viro/ios/dist/ViroRenderer/static_lib'
+
   end
   pre_install do |installer|
     $RNMapxus.pre_install(installer)
